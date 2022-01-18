@@ -254,7 +254,6 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".svg"
   output_formats:
     webp: "-quality 75%"
 
