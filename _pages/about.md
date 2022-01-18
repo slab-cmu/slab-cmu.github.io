@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: I am an Assistant Professor in the <a href="https://www.lti.cs.cmu.edu/">Language Technologies Institute</a> in the <a href="https://www.cs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>.
+subtitle: I am an Assistant Professor in the <a href="https://www.lti.cs.cmu.edu/">Language Technologies Institute</a> in the <a href="https://www.cs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, and a part-time Research Scientist at <a href="https://research.google/teams/language/">Google</a>.
 #  and a part-time Research Scientist at <a href="https://research.google/teams/language/">Google Research</a>.
 
 profile:
@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- I am an Assistant Professor in the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and a part-time Research Scientist at [Google Research](https://research.google/teams/language/). -->
 
-I earned my Ph.D. from [UMass Amherst](http://www.cs.umass.edu)	working in the [Information Extraction and Synthesis Laboratory](http://www.iesl.cs.umass.edu) with [Andrew McCallum](http://people.cs.umass.edu/~mccallum/). Previously, I earned a B.S. in Computer Science from the [University of Maine](http://www.umaine.edu) with a minor in math, where I applied epidemiological models to the spread of internet worms with [David Hiebeler](https://umaine.edu/mathematics/david-hiebeler/). I've also spent time as an intern and/or research scientist at Amazon, IBM, Facebook, and Google. You can find a formal bio for me [here](./bio).
+I earned my Ph.D. from [UMass Amherst](http://www.cs.umass.edu)	working in the [Information Extraction and Synthesis Laboratory](http://www.iesl.cs.umass.edu) with [Andrew McCallum](http://people.cs.umass.edu/~mccallum/). Previously, I earned a B.S. in Computer Science from the [University of Maine](http://www.umaine.edu) with a minor in math, where I applied epidemiological models to the spread of internet worms with [David Hiebeler](https://umaine.edu/mathematics/david-hiebeler/). I've also spent time as an intern and/or research scientist at Amazon, IBM, and Facebook. You can find a formal bio for me [here](./bio).
 
 I do research at the intersection of natural language processing (NLP) and machine learning, and my broad research objective is bridging the gap between state-of-the-art NLP methods, and the wide variety of users who stand to benefit from that technology, but for whom that technology does not yet work in practice. <b>You can learn more about my research group SLAB [here](./slab).</b>
 
