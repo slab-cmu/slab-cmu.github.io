@@ -623,3 +623,6 @@ th {
 td {
   padding         : .2em .5em;
 }
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
