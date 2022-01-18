@@ -11,7 +11,7 @@ logo:
   image: SLAB_inverse.svg
 ---
 
-SLAB is the research group in the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) at [CMU](https://www.cmu.edu/) led by [Emma Strubell](./about). We do research at the intersection of natural language processing (NLP) and machine learning. The high-level motivation for our work is democratizing AI (specifically, NLP). This means: 
+SLAB is the research group in the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) at [CMU](https://www.cmu.edu/) led by [Emma Strubell](/). We do research at the intersection of natural language processing (NLP) and machine learning. The high-level motivation for our work is democratizing AI (specifically, NLP). This means: 
 - Everyone should be able to shape, and shape uses of, NLP technology, with or without access to substantial compute resources;
 - The NLP community should provide text analysis solutions that are useful across a broad array of applications for solving real-world problems, not just tasks with the highest potential to increase capital. 
 
