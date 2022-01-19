@@ -35,5 +35,5 @@ In 2019 I backpacked the first 250 miles (southbound) of the [Colorado Trail](ht
 
 I am also co-author of [Plant Jones](https://twitter.com/plant_jones), a semi-intelligent plant who tweets negatively about water when thirsty, and positively when not. Code is available [here](https://github.com/patverga/plant_jones). Plant has been staying away from social media lately, but is still living his best life in my kitchen today!
 
-I started programming in middle school on my TI-83 calculator, and started using [Gentoo Linux](https://www.gentoo.org/main/en/about.xml) in high school, all self-taught out of a strong motivation to [h4ck the planet](https://www.youtube.com/watch?v=Cipc8EowshY). Now I've sold out and use a Mac, but still can still satisfy some of that system debugging itch when I teach [On-Device ML](http://cmu-odml.github.io).
+I started programming in middle school on my TI-83 calculator, and started using [Gentoo Linux](https://www.gentoo.org/main/en/about.xml) in high school, all self-taught out of a strong motivation to [h4ck the planet](https://www.youtube.com/watch?v=Cipc8EowshY). Now I've sold out and use a Mac, but can still satisfy some of that system debugging itch when I teach [On-Device ML](http://cmu-odml.github.io).
 
