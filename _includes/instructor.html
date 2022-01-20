@@ -15,7 +15,9 @@
           <div class="card-body">
             <h2 class="card-title">{{ project.title }}</h2>
             <p class="card-text">{{ project.description }}</p>
-            <p class="card-text">Office hours: {{ project.OH }}</p>
+            {% if project.OH -%}
+              <p class="card-text">Office hours: {{ project.OH }}</p>
+            {%- endif %}
           </div>
         </div>
       </a>

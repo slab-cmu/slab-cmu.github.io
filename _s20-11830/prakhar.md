@@ -6,5 +6,5 @@ img: assets/img/prakhar.jpeg
 redirect: https://prakharguptaz.github.io/
 importance: 4
 category: TAs
-OH: TBD
+OH: 3-4pm Wednesdays
 ---
