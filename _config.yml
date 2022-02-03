@@ -116,8 +116,8 @@ collections:
     output: true
     permalink: /teaching/:path/
   s20-11830:
-    output: false
-    permalink: /teaching/11830/:path/
+    output: true
+    permalink: /teaching/11-830/:path/
 
 news_limit: 5
 
