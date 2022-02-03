@@ -80,13 +80,13 @@ Phrases
 ----
 Expand the PMI analysis to higher-order n-grams and possibly syntactic phrases. Note that you will want to also expand the identity list to possibly include combinations of identity types (such as *asian man*). Refer to [Rudinger et al. (2017)](https://aclanthology.org/W17-1609/) for ideas here.
 
-Association measures
-----
-Perhaps PMI is not the best lexical association measure to see social bias with identity terms. Explore lexical association measures other than PMI; see [Pecina (2010)](https://link.springer.com/article/10.1007/s10579-009-9101-4) for ideas.
-
 Bias with respect to class labels
 ----
 In this assignment you implemented an approach for identifying associations between unigrams and identity labels in a corpus. You can similarly investigate whether identity words (and closely related words via e.g. embedding similarity) have some correlation with *class labels* in text classification tasks, such as [sentiment analysis](https://nlp.stanford.edu/sentiment/index.html) or [opinion mining](https://mpqa.cs.pitt.edu/). Discuss your results. What are possible implications of such bias for downstream uses of such a classifier? Are there certain model designs that might be more susceptible to such correlations than others?
+
+Association measures
+----
+Perhaps PMI is not the best lexical association measure to see social bias with identity terms. Explore lexical association measures other than PMI; see [Pecina (2010)](https://link.springer.com/article/10.1007/s10579-009-9101-4) for ideas.
 
 Latest methods
 ----
