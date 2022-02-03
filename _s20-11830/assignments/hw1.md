@@ -82,7 +82,7 @@ Expand the PMI analysis to higher-order n-grams and possibly syntactic phrases. 
 
 Bias with respect to class labels
 ----
-In this assignment you implemented an approach for identifying associations between unigrams and identity labels in a corpus. You can similarly investigate whether identity words (and closely related words via e.g. embedding similarity) have some correlation with *class labels* in text classification tasks, such as [sentiment analysis](https://nlp.stanford.edu/sentiment/index.html) or [opinion mining](https://mpqa.cs.pitt.edu/). Discuss your results. What are possible implications of such bias for downstream uses of such a classifier? Are there certain model designs that might be more susceptible to such correlations than others?
+In this assignment you implemented an approach for identifying associations between unigrams and identity labels in a corpus. You can similarly investigate whether identity words (and closely related words via e.g. embedding similarity) have some correlation with *class labels* in text classification tasks, such as [sentiment analysis](https://nlp.stanford.edu/sentiment/index.html). Discuss your results. What are possible implications of such bias for downstream uses of such a classifier? Are there certain model designs that might be more susceptible to such correlations than others?
 
 Association measures
 ----
