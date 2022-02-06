@@ -57,7 +57,7 @@ Compute PMI between the identity labels in the provided list and all other words
 
 Calculate PMI separately for identity terms in the premises, which are the original provided captions from the Flickr30k image captioning dataset, and identity terms in the hypotheses, which were elicited in a crowdworking task. You will compare the associations made in the write-up.
 
-**Qualitative analysis:** Find specific hypotheses from the dataset where an identity label occurs with a top-associated term that shows some social bias or does not. Look at 1-2 examples for at least 5 different identity labels. Also note the label (entailment, contradiction, neutral) and consider whether the impact of asking annotators for certain types of inference.
+**Qualitative analysis:** Find specific hypotheses from the dataset where an identity label occurs with a top-associated term that shows some social bias or does not. Look at 1-2 examples for at least 5 different identity labels. Also note the label (entailment, contradiction, neutral) and consider the impact of asking annotators for certain types of inference.
 
 **Crowdsourcing set-up:** Read about what crowdworkers were asked to do in constructing the SNLI corpus in the SNLI paper. Come up with at least one idea about how the designers of the crowdsourcing task might have mitigated any social bias you found in your analysis. For example, are there certain topics that often led to biased hypotheses? Could the task have been structured differently or different instructions given to mitigate bias?
 
