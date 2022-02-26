@@ -101,7 +101,7 @@ You may aim to improve accuracy/F1 of hate speech classification, or FPR, or to 
 
 In your report, include a description of your model and results over dev.tsv. Additionally, use your improved classifier to predict results over `test.tsv` and place these predictions in a file titled `FirstName_LastName_advanced.tsv`.
 
-In order to facitilate analysis, we provide a larger data set [here](https://drive.google.com/file/d/1CqFfZySymPaU8jJrCP50ouKl2XMaygBr/view?usp=sharing) . This extended data set contains full training and dev sets from the TwitterAAE data set, as well as additional data annotated for hate speech drawn from a different paper ([ICWSM, 2017](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/viewPaper/15665)). Note that user mentions have not been replaced in this data set. You are free to explore any ideas you have. We provide a few pointers for inspiration.
+In order to facitilate analysis, we provide a larger data set [here](https://drive.google.com/file/d/1CqFfZySymPaU8jJrCP50ouKl2XMaygBr/view?usp=sharing). This extended data set contains full training and dev sets from the TwitterAAE data set, as well as additional data annotated for hate speech drawn from a different paper ([ICWSM, 2017](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/viewPaper/15665)). Note that user mentions have not been replaced in this data set. You are free to explore any ideas you have. We provide a few pointers for inspiration.
 
 If you choose to maximize performance over offensiveness classification, you may choose to develop a more sophisiticated model for hate speech detection. Some prior work includes:
 
