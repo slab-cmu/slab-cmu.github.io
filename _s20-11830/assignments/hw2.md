@@ -46,7 +46,7 @@ The file `offenseval-annotation.txt` provides additional details on the annotati
 
 We additionally provide a data set of tweets proxy-labelled for race in the file titled `mini_demographic_dev.tsv`. This data is taken from the [TwitterAAE](http://slanglab.cs.umass.edu/TwitterAAE/) data set and uses posterior proportions of demographic topics as a proxy for racial dialect ([details](https://www.aclweb.org/anthology/D16-1120.pdf)). The first column (`text`) contains the text of the tweet, and the second column (`demographic`) contains a label: “AA” (for “African American”), “White”, “Hispanic”, or “Other”. For this assignment, we assume that no tweet in the TwitterAAE data set contains toxic language. Thus, any tweet in this file that is classified as toxic is a false positive.
 
-Finally, both development sets (`dev.tsv` and `mini_demographic_dev.tsv`) contain a column `perspective_score`, which contains a toxicity score. These scores were obtain using the [PerspectiveAPI](https://www.perspectiveapi.com/) tool released by Alphabet. This tool is intended to help “developers and publishers…give realtime feedback to commenters or help moderators do their job.”
+Finally, both development sets (`dev.tsv` and `mini_demographic_dev.tsv`) contain a column `perspective_score`, which contains a toxicity score. These scores were obtained using the [PerspectiveAPI](https://www.perspectiveapi.com/) tool released by Alphabet. This tool is intended to help “developers and publishers…give realtime feedback to commenters or help moderators do their job.”
 
 In all data sets, user mentions have been replaced with the token `@USER`.
 
