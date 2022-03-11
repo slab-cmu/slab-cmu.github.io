@@ -20,7 +20,7 @@ hwtitle: "HW 2: Civility in Communication"
 **HW 2: Civility in Communication**
 ====
 
-- **Due 11:59pm, Tuesday 3/17.**
+- **Due 11:59pm, Thursday 3/17.**
 - Submission: Submit your assignment through Canvas. Include 3-4 separate files in a zipped into zip/tar file: your write-up (titled `FirstName_LastName_hw2.pdf`), your predictions over `test.tsv` titled `FirstName_LastName_test.tsv`, your improved predictions over `test.tsv` titled `FirstName_LastName_advanced.tsv` (if completed), and your code. Code will not be graded.
 
 * * *
