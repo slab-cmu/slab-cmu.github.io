@@ -38,7 +38,6 @@ The data for this assignment is available [here](https://drive.google.com/file/d
 * `classify.py`: a classifier that predicts the author's gender and the subreddit for a post (example run: `python classify.py --test_file dataset.csv`). Note that this file also uses the two provided pickle files.
 * `dataset.csv`: your primary data.
 * `background.csv`: additional Reddit posts that you may optionally use for training an obfuscation model. A larger version is available [here](https://drive.google.com/file/d/1n5-0ePZOxNASUzcP9CUG_tIjpSog09EQ/view?usp=sharing).
-
 * `female.txt`: a list of words commonly used by women.
 * `male.txt`: a list of words commonly used by men.
 
