@@ -91,7 +91,7 @@ Write a 2-3 page report (ACL format) `FirstName_LastName_hw3.pdf`. Please do not
 
 * * *
 
-## Grading (100 points)
+## Grading (100 points + up to 10 extra credit)
 
 * 20 points - Submitting assignment.
 * 40 points - Completing basic requirements.
