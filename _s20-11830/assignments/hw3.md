@@ -73,6 +73,10 @@ Develop your own obfuscation model. We provide `background.csv`, a large data se
 
 In your report, include a description of your model and results.
 
+## Extra Credit!
+- Perform multiple advanced analyses
+- Perform a new advanced analysis not suggested above, or perform one of the last 3 advanced analyses. Instead of simply describing your approach, provide a detailed and clear motivation, description, and analysis, including a comparison to the basic analysis.
+
 * * *
 
 ## Write-up
@@ -93,3 +97,4 @@ Write a 2-3 page report (ACL format) `FirstName_LastName_hw3.pdf`. Please do not
 * 40 points - Completing basic requirements.
 * 20 points - Write up is well-written, presents meaningful analysis, and contains all requested information.
 * 20 points - Advanced analysis.
+* 10 points - Extra credit.
