@@ -8,7 +8,7 @@ horizontal: false
 
 logo:
   align: left
-  image: SLAB_inverse.svg
+  image: SLAB_inverse.jpeg
 ---
 
 SLAB is the research group in the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) at [CMU](https://www.cmu.edu/) led by [Emma Strubell](/). We do research at the intersection of natural language processing (NLP) and machine learning. The high-level motivation for our work is democratizing AI (specifically, NLP). This means: 
