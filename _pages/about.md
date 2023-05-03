@@ -6,7 +6,7 @@ subtitle: I am an Assistant Professor in the <a href="https://www.lti.cs.cmu.edu
 
 profile:
   align: right
-  image: race_brook.jpeg
+  image: headshot-2023-crop.png
   address:
     <p><i class="fa fa-map-marker-alt fa-lg"></i> 6709 Gates Hillman</p>
     <p>&nbsp;&nbsp;&nbsp;Pittsburgh, PA, USA
