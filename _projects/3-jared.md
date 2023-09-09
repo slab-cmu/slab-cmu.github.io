@@ -5,5 +5,5 @@ description: LTI PhD student; co- w/ <a href="https://yonatanbisk.com/">Yonatan 
 img: assets/img/jared.jpeg
 redirect: https://www.jaredfern.com/
 importance: 3
-category: work
+category: "Current students"
 ---

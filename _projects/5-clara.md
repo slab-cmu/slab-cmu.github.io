@@ -5,6 +5,6 @@ description: LTI PhD student
 img: assets/img/clara.jpeg
 redirect: https://clarasna.com/
 importance: 5
-category: fun
+category: "Current students"
 ---
 
