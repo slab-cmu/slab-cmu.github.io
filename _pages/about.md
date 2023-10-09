@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: I am the Raj Reddy Assistant Professor in the <a href="https://www.lti.cs.cmu.edu/">Language Technologies Institute</a> in the <a href="https://www.cs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, and a Visiting Scientist at the <a href="https://allenai.org/">Allen Institute for Artificial Intelligence</a>. I also hold a courtesy appointment in CMU's <a href="https://mse.engineering.cmu.edu/">Department of Materials Science and Engineering</a>.
+subtitle: I am the Raj Reddy Assistant Professor in the <a href="https://www.lti.cs.cmu.edu/">Language Technologies Institute</a> in the <a href="https://www.cs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, and a Visiting Scientist at the <a href="https://allenai.org/">Allen Institute for Artificial Intelligence</a>. I also hold a courtesy faculty appointment in CMU's <a href="https://mse.engineering.cmu.edu/">Department of Materials Science and Engineering</a>.
 
 profile:
   align: right
