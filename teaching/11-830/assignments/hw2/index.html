@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Metadata, OpenGraph and Schema.org -->
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emma  Strubell | 11-830: Computational Ethics for NLP</title>
+    <meta name="author" content="Emma  Strubell" />
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+    <!-- Bootstrap & MDB -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+    <!-- Styles -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰️</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="https://strubell.github.io/teaching/11-830/assignments/hw2/">
+</head>
+<!-- Body -->
+<body class="fixed-top-nav">
+  <!-- Content -->
+  <div class="container mt-5">
+    <header class="post-header">
+      <h1 class="post-title"><strong><a href="/teaching/11-830/">11-830: Computational Ethics for NLP</a></strong></h1>
+      <h2 class="post-semester">
+<strong>Spring 2022</strong>
+    </h2>
+    <ul>
+      <li>
+<strong>Time:</strong> 10:10-11:30 Tuesdays &amp; Thursdays</li>
+      <li>
+<strong>Place:</strong> Singleton Room, Roberts Engineering Hall <a href="/assets/pdf/Campus-Map-to-Singleton.pdf">[PDF map]</a>
+</li>
+      <li>
+<strong>Zoom:</strong> See <a href="https://canvas.cmu.edu/courses/28069" target="_blank" rel="noopener noreferrer">Canvas</a> or <a href="http://11830workspace.slack.com" target="_blank" rel="noopener noreferrer">Slack</a> for Zoom link. </li>
+    </ul>
+  </header>
+  <hr>
+  <h1 id="hw-2-civility-in-communication"><strong>HW 2: Civility in Communication</strong></h1>
+  <ul>
+    <li><strong>Due 11:59pm, Thursday 3/17.</strong></li>
+    <li>Submission: Submit your assignment through Canvas. Include 3-4 separate files in a zipped into zip/tar file: your write-up (titled <code class="language-plaintext highlighter-rouge">FirstName_LastName_hw2.pdf</code>), your predictions over <code class="language-plaintext highlighter-rouge">test.tsv</code> titled <code class="language-plaintext highlighter-rouge">FirstName_LastName_test.tsv</code>, your improved predictions over <code class="language-plaintext highlighter-rouge">test.tsv</code> titled <code class="language-plaintext highlighter-rouge">FirstName_LastName_advanced.tsv</code> (if completed), and your code. Code will not be graded.</li>
+  </ul>
+  <hr>
+  <h2 id="goals">Goals</h2>
+  <p>As we have discussed in class, abusive language on online platforms has become a major concern in the past few years. However, developing automated methods for flagging and censoring abusive language has proved to be difficult and prone to unwanted biases. The goals of this assignment are to (1) explore the challenges and ethical issues behind developing classifier for identifying offensive language (2) develop techincal solutions that aim to address these challenges.</p>
+  <hr>
+  <h2 id="overview">Overview</h2>
+  <p>In this assignment, you will explore an off-the-shelf toxicity classifier as well as build your own models. In general, you will evaluate models using two criteria: (1) performance over hate speech detection (Accuracy and F1 Score where “NOT” is considered the positive label) and (2) False Positive Rate (FPR), how often the model misclassifiers non-toxic speech as toxic, specifically for comments associated with different demographic dialects. Poor performance over hate speech classification suggests that the model is not accurate enough to be useful, while poor or imbalanced FPR indicates that the model may impose racial biases.</p>
+  <p>The primary data for this assignment is available <a href="/teaching/11-830/assignments/files/civility_data.tar.gz">here</a> . <strong>Please note that the data contains offensive or sensitive content, including profanity and racial slurs.</strong></p>
+  <p>We provide data drawn from two sources. The first (files <code class="language-plaintext highlighter-rouge">train.tsv</code> and <code class="language-plaintext highlighter-rouge">dev.tsv</code>) consists of tweets annotated for offensiveness taken from the <a href="https://competitions.codalab.org/competitions/20011" target="_blank" rel="noopener noreferrer">2019 SemEval task</a> on offensive language detection. In the files <code class="language-plaintext highlighter-rouge">train.tsv</code> and <code class="language-plaintext highlighter-rouge">dev.tsv</code>, the first column (<code class="language-plaintext highlighter-rouge">text</code>) contains the text of a tweet, the second column (<code class="language-plaintext highlighter-rouge">label</code>) contains an offensiveness label:</p>
+  <ul>
+    <li>(NOT) Not Offensive - This post does not contain offense or profanity.</li>
+    <li>(OFF) Offensive - This post contains offensive language or a targeted (veiled or direct) offense</li>
+  </ul>
+  <p>The file <code class="language-plaintext highlighter-rouge">offenseval-annotation.txt</code> provides additional details on the annotation scheme.</p>
+  <p>We additionally provide a data set of tweets proxy-labelled for race in the file titled <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code>. This data is taken from the <a href="http://slanglab.cs.umass.edu/TwitterAAE/" target="_blank" rel="noopener noreferrer">TwitterAAE</a> data set and uses posterior proportions of demographic topics as a proxy for racial dialect (<a href="https://www.aclweb.org/anthology/D16-1120.pdf" target="_blank" rel="noopener noreferrer">details</a>). The first column (<code class="language-plaintext highlighter-rouge">text</code>) contains the text of the tweet, and the second column (<code class="language-plaintext highlighter-rouge">demographic</code>) contains a label: “AA” (for “African American”), “White”, “Hispanic”, or “Other”. For this assignment, we assume that no tweet in the TwitterAAE data set contains toxic language. Thus, any tweet in this file that is classified as toxic is a false positive.</p>
+  <p>Finally, both development sets (<code class="language-plaintext highlighter-rouge">dev.tsv</code> and <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code>) contain a column <code class="language-plaintext highlighter-rouge">perspective_score</code>, which contains a toxicity score. These scores were obtained using the <a href="https://www.perspectiveapi.com/" target="_blank" rel="noopener noreferrer">PerspectiveAPI</a> tool released by Alphabet. This tool is intended to help “developers and publishers…give realtime feedback to commenters or help moderators do their job.”</p>
+  <p>In all data sets, user mentions have been replaced with the token <code class="language-plaintext highlighter-rouge">@USER</code>.</p>
+  <hr>
+  <h2 id="basic-requirements">Basic Requirements</h2>
+  <p>Completing the basic requirements will earn a passing (B-range) grade</p>
+  <p><strong>Off-the-shelf Model Exploration</strong></p>
+  <ul>
+    <li>Use the provided perspecitve_score values to classify each tweet in <code class="language-plaintext highlighter-rouge">dev.tsv</code> and <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code> as toxic or non-toxic. As a starting point, assume that a tweet is considered offensive if it contains a toxicity score &gt; 0.8 (you may optionally explore other thresholds).</li>
+    <li>Using <code class="language-plaintext highlighter-rouge">dev.tsv</code> report the Accuracy and F1 Scores of PerspectiveAPI for offensiveness classification.</li>
+    <li>Using <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code>, separately report the FPR for each demographic group (assuming no tweet in <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code> is actually offensive).</li>
+    <li>Briefly discuss your results</li>
+  </ul>
+  <p><strong>Custom Model Exploration</strong></p>
+  <ul>
+    <li>Build your own classifier to distinguish offensive (OFF) tweets from non-offensive (NOT) tweets. Your model should be trained on <code class="language-plaintext highlighter-rouge">train.tsv</code> and should obtain an accuracy of at least 70% and an F1 score of at least 80% over <code class="language-plaintext highlighter-rouge">dev.tsv</code> (this should be easy to obtain with surface-level features).</li>
+    <li>Report the accuracy and F1 score of your model over <code class="language-plaintext highlighter-rouge">dev.tsv</code>
+</li>
+    <li>Report FPR over <code class="language-plaintext highlighter-rouge">mini_demographic_dev.tsv</code>
+</li>
+    <li>Briefly discuss your results. How does your model compare to PerspectiveAPI?</li>
+  </ul>
+  <p><strong>Test Set Predictions</strong></p>
+  <ul>
+    <li>The file <code class="language-plaintext highlighter-rouge">test.tsv</code> contains a mix of data from the the TwitterAAE data set and the 2019 SemEval task. Use your model to make OFF/NOT predictions for the <code class="language-plaintext highlighter-rouge">test.tsv</code> samples, and place these predictions in a separate file titled FirstName_LastName_test.tsv. Offensiveness labels (OFF/NOT) should be in a column with the heading <code class="language-plaintext highlighter-rouge">label</code>. Please use tabs (<code class="language-plaintext highlighter-rouge">\t</code>) to separate columns.</li>
+  </ul>
+  <p><strong>Write-up</strong></p>
+  <p>Submit a 2-3 page report (ACL format) titled <code class="language-plaintext highlighter-rouge">FirstName_LastName_hw2.pdf</code>. Please do not submit more than 4 pages. The report should include:</p>
+  <ul>
+    <li>Results and discussion of your analysis of the PerspectiveAPI scores</li>
+    <li>Description of your offensiveness classifier</li>
+    <li>Results and discussion of your classifier over the dev sets</li>
+    <li>Description of your advanced analysis model and results over dev sets (if completed)</li>
+    <li>
+      <p>A brief (1 paragraph) discussion of the ethical implications of using machine learning to combat abusive language. This discussion should refer to your observations from this assignment as well as refer to issues discussed in class or drawn from additional references. Questions you might consider include:</p>
+    </li>
+    <li>How should we define offensive language?</li>
+    <li>What is the cost of misclassification? Who is negatively impacted by missclassification?</li>
+    <li>What are concerns around collecting and annotating training data?</li>
+  </ul>
+  <p>Be sure to cite all references.</p>
+  <hr>
+  <h2 id="advanced-analysis">Advanced Analysis</h2>
+  <p>Choose one of the two options below for advanced analysis:</p>
+  <p><strong>Improve your preliminary classifier</strong>
+    You may aim to improve accuracy/F1 of hate speech classification, or FPR, or to improve both metrics simultaneously. If you choose to focus on one metric, still report results for the other metric and discuss any trade-offs. Creative model architectures or feature crafting will receive full credit, even if they do not improve results.</p>
+  <p>In your report, include a description of your model and results over dev.tsv. Additionally, use your improved classifier to predict results over <code class="language-plaintext highlighter-rouge">test.tsv</code> and place these predictions in a file titled <code class="language-plaintext highlighter-rouge">FirstName_LastName_advanced.tsv</code>.</p>
+  <p>In order to facitilate analysis, we provide a larger data set <a href="https://drive.google.com/file/d/1CqFfZySymPaU8jJrCP50ouKl2XMaygBr/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>. This extended data set contains full training and dev sets from the TwitterAAE data set, as well as additional data annotated for hate speech drawn from a different paper (<a href="https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/viewPaper/15665" target="_blank" rel="noopener noreferrer">ICWSM, 2017</a>). Note that user mentions have not been replaced in this data set. You are free to explore any ideas you have. We provide a few pointers for inspiration.</p>
+  <p>If you choose to maximize performance over offensiveness classification, you may choose to develop a more sophisiticated model for hate speech detection. Some prior work includes:</p>
+  <ul>
+    <li>
+<a href="http://www.aclweb.org/anthology/W17-1101" target="_blank" rel="noopener noreferrer">A Survey on Hate Speech Detection using Natural Language Processing</a> (This has references to many other papers)</li>
+    <li><a href="http://www.aclweb.org/anthology/W12-2103" target="_blank" rel="noopener noreferrer">Detecting Hate Speech on the World Wide Web</a></li>
+    <li><a href="https://arxiv.org/pdf/1706.00188.pdf" target="_blank" rel="noopener noreferrer">Deep Learning for Hate Speech Detection in Tweet</a></li>
+    <li><a href="http://www.www2015.it/documents/proceedings/companion/p29.pdf" target="_blank" rel="noopener noreferrer">Hate Speech Detection with Comment Embeddings</a></li>
+  </ul>
+  <p>Models from prior SemEval tasks may also be helpful. Additionally, the provided <code class="language-plaintext highlighter-rouge">train.tsv</code> file contains annotations for different types of offensive language (e.g. untargeted vs. targeted, labels are in the third column titled <code class="language-plaintext highlighter-rouge">category</code>), which you may also consider leveraging.</p>
+  <p>If you choose to improve FPR, you may wish to leverage the provided <code class="language-plaintext highlighter-rouge">demographic_train.tsv</code> file. Data from this file could be used to balance your training data or to train a model with an adversarial object. Some related work includes:</p>
+  <ul>
+    <li><a href="https://www-nlp.stanford.edu/pubs/pryzant2017sigir.pdf" target="_blank" rel="noopener noreferrer">Predicting Sales from the Language of Product Descriptions</a></li>
+    <li><a href="https://arxiv.org/abs/1909.00453" target="_blank" rel="noopener noreferrer">Topics to Avoid: Demoting Latent Confounds in Text Classification</a></li>
+    <li><a href="https://arxiv.org/pdf/1904.03310.pdf" target="_blank" rel="noopener noreferrer">Gender Bias in Contextualized Word Embeddings</a></li>
+  </ul>
+  <p><strong>Adapt to Gab</strong>
+    As a second option, you can explore how to adapt your classifier to a different data domain from Twitter and a slightly different task.
+    <a href="https://psyarxiv.com/hqjxn/" target="_blank" rel="noopener noreferrer">Kennedy et al., 2021</a> introduces a new annotation scheme for “hate-based rhetoric” including Human Degradation (HD), Calls for Violence (CV), Vulgar/offensive (VO). The Gab Hate Corpus (GHC) annotates posts from the website gab.com for these three categories (among other variables like targeted group/framing). Gab is commonly used by political extremists and the alt-right <a href="https://www.washingtonpost.com/technology/2021/01/11/gab-social-network/" target="_blank" rel="noopener noreferrer">Andrews 2021</a>, so that hate speech is more concentrated than on Twitter with a different distribution over topics/targeted groups. To investigate how well your model can do, you can select one or more of the hate-based rhetoric categories to evaluate on. Then, you can train a new classifier over the Gab training data to compare performance with the preliminary classifier. The Gab Hate Corpus also contains several variables for targeted populations/framing. It would be neat to look more closely at how performance differs over speech targeting different groups (e.g. political identity (POL), racial/ethnic identity (RAE)). Alternatively, you can also develop methods to adapt a model trained on Twitter assuming little or no training data from Gab. Dataset available <a href="/teaching/11-830/assignments/files/gab_data.tar.gz">here</a>.</p>
+  <hr>
+  <h2 id="grading-100-points">Grading (100 points)</h2>
+  <ul>
+    <li>20 points - Submitting assignment</li>
+    <li>40 points - Completing basic requirements</li>
+    <li>20 points - Write up is well-written, presents meaningful analysis, and contains all requested information</li>
+    <li>20 points - Advanced analysis</li>
+    <li>Additional points of extra credit will be awarded to students with particularly creative classifiers, meaningful analyses, or high performance over <code class="language-plaintext highlighter-rouge">test.tsv</code>.</li>
+  </ul>
+  <hr>
+  <h2 id="implementation-tips">Implementation Tips</h2>
+  <ul>
+    <li>You are welcome to use existing packages. Consider tools like nltk and gensim for text processing and tools like sklearn for constructing baseline classifiers.</li>
+  </ul>
+  <hr>
+  <h2 id="references">References</h2>
+  <ul>
+    <li>The Risk of Racial Bias in Hate Speech Detection. Maarten Sap, Dallas Card, Saadia Gabriel, Yejin Choi, and Noah A. Smith. Proceedings of ACL 2019.</li>
+    <li>Automated hate speech detection and the problem of offensive language. Thomas Davidson, Dana Warmsley, Michael Macy, and Ingmar Weber. Proceedings of ICWSM 2017.</li>
+    <li>Demographic Dialectal Variation in Social Media: A Case Study of African-American English. Su Lin Blodgett, Lisa Green, and Brendan O’Connor. Proceedings of EMNLP 2016.</li>
+    <li>Racial Bias in Hate Speech and Abusive Language Detection Datasets. Thomas Davidson, Debasmita Bhattacharya, and Ingmar Weber. Proceedings of Third Abusive Language Workshop at ACL 2019.</li>
+    <li>SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval). Marcos Zampieri, Shervin Malmasi, Preslav Nakov, Sara Rosenthal, Noura Farra, and Ritesh Kumar. Proceedings of 13th International Workshop on Semantic Evaluation at NAACL 2019.</li>
+  </ul>
+</div>
+</body>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</html>
