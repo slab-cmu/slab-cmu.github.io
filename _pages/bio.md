@@ -6,8 +6,8 @@ description:
 nav: false
 ---
 
-Emma Strubell is the Raj Reddy Assistant Professor in the Language Technologies Institute in the School
-of Computer Science at Carnegie Mellon University, and a Visiting Scientist at the Allen Institute for Artificial Intelligence.
+Emma Strubell is the Raj Reddy Assistant Professor in the Language Technologies Institute (within the School
+of Computer Science) at Carnegie Mellon University, and a Visiting Scientist at the Allen Institute for Artificial Intelligence.
 Previously she held research scientist roles at Google and FAIR after earning her doctoral degree
 in 2019 from the University of Massachusetts Amherst. Her research lies at the intersection of natural language processing 
 and machine learning, with a focus on providing pragmatic solutions to practitioners 
