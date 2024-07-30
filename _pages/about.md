@@ -7,7 +7,8 @@ subtitle: I am the Raj Reddy Assistant Professor in the <a href="https://www.lti
 profile:
   align: right
   image: headshot-2023-crop.png
-  address:
+  image_circular: false # crops the image to make it circular
+  more_info:
     <p><i class="fa fa-map-marker-alt fa-lg"></i> 6709 Gates Hillman</p>
     <p>&nbsp;&nbsp;&nbsp;Pittsburgh, PA, USA
     # <p><i class="fa fa-envelope fa-lg"></i> strubell@cmu.edu
@@ -15,9 +16,9 @@ profile:
     # <p><i class="fab fa-github fa-lg"></i> @strubell
     # <p><i class="fab fa-stack-overflow fa-lg"></i> @strubell
 
-news: false  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 <!-- I am an Assistant Professor in the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and a part-time Research Scientist at [Google Research](https://research.google/teams/language/). -->

@@ -4,6 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Course materials.
 nav: true
+nav_order: 6
 display_categories: ["Current", "Past"]
 ---
 
