@@ -6,6 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Emma
 middle_name:
 last_name: Strubell
+pronouns: they/them
 email: strubell@cmu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal and lab webpage.
@@ -18,7 +19,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⛰️ # the emoji used as the favicon
 url: https://alshedivat.github.io # the base hostname & protocol for your site
 baseurl: /al-folio # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -75,9 +76,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: strubell
 gitlab_username: # your GitLab user name
-twitter_username: strubell
+x_username: strubell
 linkedin_username: # your LinkedIn user name
-scholar_userid: UCDMtM0AAAAJ
+scholar_userid: UCDMtM0AAAAJ # your Google Scholar ID
+stackoverflow_id: 4121413
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -86,23 +88,20 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
-stackoverflow_id: # your stackoverflow id
 telegram_username: # your Telegram user name
 unsplash_id: # your unsplash id
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
-stackoverflow_id: 4121413
 
 rss_icon: false
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the best way to reach me, or by Slack if you are at LTI or AI2.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -139,12 +138,6 @@ disqus_shortname: # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -165,9 +158,9 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  projects:
+  students:
     output: true
-    permalink: /projects/:path/
+    permalink: /students/:path/
   teaching:
     output: true
     permalink: /teaching/:path/
@@ -181,7 +174,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -346,7 +339,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.

@@ -129,6 +129,8 @@ blockquote {
   }
 }
 
+// li { padding-left: 1em; }
+
 // Checklist
 
 ul.task-list {
@@ -191,6 +193,7 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   margin-right: 2.5rem;
+  // margin-left: 2.5rem;
   width: 100%;
 
   .more-info {
@@ -206,11 +209,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 2.5rem;
 }
 
 @media (min-width: 576px) {
