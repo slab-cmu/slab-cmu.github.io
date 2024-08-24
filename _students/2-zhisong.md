@@ -6,4 +6,5 @@ img: assets/img/zhisong.jpg
 redirect: https://zzsfornlp.github.io/
 importance: 2
 category: Alumni
+current: "Researcher, Tencent AI Lab"
 ---

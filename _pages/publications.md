@@ -8,6 +8,7 @@ subtitle: <a href="http://scholar.google.com/citations?user=UCDMtM0AAAAJ&hl=en">
 ---
 
 <!-- _pages/publications.md -->
+[Google Scholar](https://scholar.google.com/citations?user=UCDMtM0AAAAJ) is more likely to be up to date.
 
 <!-- Bibsearch Feature -->
 
