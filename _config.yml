@@ -32,7 +32,7 @@ lab_long: Structure in(g) LAnguage LAB
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
@@ -164,6 +164,9 @@ collections:
   s20-11830:
     output: true
     permalink: /teaching/11-830/:path/
+  f24-11767:
+    output: true
+    permalink: /teaching/11-767/:path/
 
 announcements:
   enabled: true
