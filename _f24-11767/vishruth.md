@@ -6,5 +6,5 @@ img: assets/img/vishruth.jpg
 redirect: 
 importance: 3
 category: TAs
-OH: TBD
+OH: Fri, TBD
 ---
