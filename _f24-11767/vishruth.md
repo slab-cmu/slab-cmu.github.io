@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Vishruth Veerendranath
-description: MCDS student, LTI
+description: MIIS student, LTI
 img: assets/img/vishruth.jpg
-redirect: 
+redirect: https://vishruth-v.github.io/
 importance: 3
 category: TAs
-OH: Fri, TBD
+OH: Thu 2-3pm, GHC 5417
 ---
